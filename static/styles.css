@@ -1,0 +1,77 @@
+/* Horror Font */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    font-family: 'Creepster', cursive;
+    background-color: #000;
+    color: #c00;
+    text-align: center;
+}
+
+/* Header with glitch effect */
+header {
+    padding: 20px;
+    background: linear-gradient(black, darkred);
+}
+
+.glitch {
+    font-size: 3em;
+    color: white;
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+    0% { text-shadow: -3px 0 red, 3px 0 blue; }
+    50% { text-shadow: -5px 0 blue, 5px 0 red; }
+    100% { text-shadow: -3px 0 red, 3px 0 blue; }
+}
+
+/* Trailer Section */
+.video-container {
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Game Features */
+.game-features {
+    background: rgba(20, 0, 0, 0.8);
+    padding: 40px;
+}
+
+.feature {
+    background: black;
+    border: 2px solid darkred;
+    padding: 20px;
+}
+
+/* Download Button */
+.epic-btn {
+    padding: 12px 25px;
+    background-color: darkred;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.epic-btn:hover {
+    background-color: black;
+    color: red;
+}
+
+/* Social Media */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.youtube { background-color: #FF0000; }
+.tiktok { background-color: #000000; }
+.instagram { background-color: #E4405F; }
+
+footer {
+    background: black;
+    padding: 20px;
+}
